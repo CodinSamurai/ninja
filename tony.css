@@ -1,0 +1,193 @@
+* {
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+.wrap {
+	margin-left:300px;
+       background-color: rgba(129, 188, 222, 0.5)
+}
+
+.cntainer {
+	height: 2500px;
+}
+
+.dami {
+	width:300px;
+	height:100px;
+	background: red;
+}
+.ic {
+       border: 1px solid black;
+       background-color: red;
+       border-radius: 10px;
+       width: 25%;
+       padding: 10px 10px;
+     }
+.ric {
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+        margin-left: 1em;
+	grid-gap:0.7em;
+	margin-right: 1em;
+	margin-top: 2em;
+	background-color: lghtblue;
+}
+.fig {
+	float:center;
+	align:center;
+}
+.head {
+	float:left;
+	text-align:center;
+	background:linear-gradient(to right, rgba(73, 96, 145,0.7), rgb(159, 175, 209));
+}
+/* * {
+    background-color:lightblue;
+   } */
+/*
+body {
+       background-color: rgba(129, 188, 222, 0.5);
+       font-family:verdana;
+   }*/
+.med {
+	float: right;
+}
+#nav {
+      background-image:linear-gradient(to left, rgba(73, 96, 145,0.7), rgb(159, 175, 209));
+      float:right;
+     }
+#nav li {
+             padding:0;
+             list-style:0;
+             display:inline;
+           }
+#nav ul li a {
+               font-size:18px;
+               padding-right:35px;
+               padding-left:10px;
+}
+#nav a:hover::after {
+                      width:100%;
+}
+
+.what:hover {
+             color:blue;
+
+}
+.what {
+	     width: fit-content;
+}
+.med {
+       width:80%;
+       margin:auto;
+       overflow:hidden;
+}
+.whop {
+        color:red;  
+}
+p {
+	color: blue;
+}
+.grid > div {
+       background-color:#eee;
+       padding: 1rem
+}
+.grid > div:nth-child(odd) {
+                     background-color:#ddd;
+}
+.grid {
+        display:grid;
+        grid-template-columns:1fr 1fr;
+ /*the grid template can also be done using % ,px or fr but fr seems to be the better option and each for the fr(1fr2fr3fr1fr etc),px or % number can be different depending on how big you desire each column*/
+ /*grid-template-columns:40% 60%;(the %,fr,px coded could be 3 or 4 different value i.e 40% 30% 30% ,depending on the number of column present/desired)*/
+        grid-column-gap:1em;
+        grid-auto-rows:minmax(100%,auto);
+}
+li:nth-child(3) {
+ 
+          color: blue;
+}
+/* second child not applying,debug*/
+li:Second-child {
+            color:blue;
+}
+/*link styling with id*/
+#link:link {
+         color:red;
+}
+
+#link:visited {
+         color:yellow;
+}
+#link:hover {
+             color:tomato;
+             background-color: transparent;
+             text-decoration: underline;
+}
+/*link styling directly without selector such as id or class,all links will be styled*/
+a:link {
+       color:red;
+}
+
+a:visited {
+            color:green;
+}
+
+.chrismas {
+          --topdot: #eee;
+          --capbottom: #fff;
+          --bodypaint: #a00;
+          width: 80vmin;
+          height: 85vmin;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+}
+.hat {
+      position:absolute;
+       width: 30%;
+       height: 30%;
+       background: var(--bodypaint);
+       border-radius: 120% 20% 0 0;
+       left: 50%;
+       bottom:50%;
+       tramsform: translate(-50%, 0) rotate(2deg);
+}
+.hat::after {
+          content: "";
+          display:block;
+          position:absolute;
+          right:-5vmin;
+          top:-15%;
+          width: 8vmin;
+          height: 8vmin;
+          border-radius: 50%;
+          background: var(--topdot);
+}
+.hat::before {
+          content: "";
+          display:block;
+          position:absolute;
+          left:-5%;
+          bottom:-17%;
+          width: 110%;
+          height: 40%;
+          border-radius: 100% / 50%;
+          box-shadow: inset 0 4vmin var(--capbottom);
+          transform: rotate(-2deg);
+}
+
+.tony {
+         height:100px;
+         width: 200px;
+         background:radial-gradient(circle,red,blue,yellow);
+}
+
+.tope {
+         height:100px;
+         width: 200px;
+         background-image: linear-gradient(to right, rgb(94, 255, 126), rgba(94, 255, 126, 0));  
+}
+
